@@ -22,10 +22,11 @@
         <div style="margin: auto;">
             <p>현재 방무:</p> <input type="number" id="x"><br>
             <p>증가 방무:</p> <input type="number" id="y"><br>
-            <p>최종 방무:</p> <input type="number" id="result_1"><br>
+            <p>최종 방무:</p> <input type="text" id="result_1" readonly><br>
             <p>방무:</p> <input type="number" id="a"><br>
             <p>보스 방무:</p> <input type="number" id="b"><br>
-            <p>보스에게 들어가는 데미지:</p> <input type="number" id="result_2"><br>
+            <p>보스에게 들어가는 데미지:</p> <input type="text" id="result_2" readonly><br>
+            <input value="계산" type="button" onclick="x_y(); a_b();">
         </div>
     </div>
 </body>
