@@ -5,7 +5,7 @@ function x_y(){
     if(x == 0 || y == 0){
         document.getElementById("result_1").value = "";
     }else{
-        document.getElementById("result_1").value = x+(100-x)*(y/100);
+        document.getElementById("result_1").value = Number(x)+(100-Number(x))*(Number(y)/100);
     }
 }
 
@@ -19,6 +19,6 @@ function a_b(){
     if(a == 0 || b == 0){
         document.getElementById("result_2").value = "";
     }else{
-        document.getElementById("result_2").value = b*a-a+100;
+        document.getElementById("result_2").value = Number(b)*Number(a)-Number(a)+100;
     }
 }
