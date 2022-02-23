@@ -19,6 +19,6 @@ function a_b(){
     if(a == 0 || b == 0){
         document.getElementById("result_2").value = "";
     }else{
-        document.getElementById("result_2").value = Number(b)*Number(a)-Number(a)+100;
+        document.getElementById("result_2").value = 1-Number(b)*(1-Number(a));
     }
 }
