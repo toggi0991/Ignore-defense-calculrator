@@ -19,6 +19,11 @@ function a_b(){
     if(a == 0 || b == 0){
         document.getElementById("result_2").value = "";
     }else{
-        document.getElementById("result_2").value = 1-Number(b)*(1-Number(a));
+        var result = (1 - (Number(b) / 100) * (1 - ((Number(a)) / 100))) * 100;
+        result = result * 100;
+        result = Math.floor(Number(result));
+        result = result / 100;
+
+        document.getElementById("result_2").value = result + "%";
     }
 }
